@@ -50,7 +50,7 @@ Show us what you've got!
 
 ## Tips
 
-Read the following articles posted by students:
+Read the following articles posted by previous students into how they planned and organized their thoughts into building a unit project.
 - [REACT.js : A Haunting by Sami Schonefeld
 ](https://medium.com/@samischonefeld/react-js-a-haunting-cd2aaf15541f)
 - [how-i-built-my-first-obama-themed-javascript-game by Sarah Currey
