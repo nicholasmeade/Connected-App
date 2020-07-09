@@ -50,6 +50,12 @@ Show us what you've got!
 
 ## Tips
 
+Read the following articles posted by students:
+- [REACT.js : A Haunting by Sami Schonefeld
+](https://medium.com/@samischonefeld/react-js-a-haunting-cd2aaf15541f)
+- [how-i-built-my-first-obama-themed-javascript-game by Sarah Currey
+](https://medium.com/@sarah.currey/how-i-built-my-first-obama-themed-javascript-game-b06f7c62af4c)
+
 * **Commit early, commit often.**  Don't be afraid to break something because you can always go back in time to a previous version.
 
 
