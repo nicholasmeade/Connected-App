@@ -5,9 +5,27 @@ Let's kick it up a notch and build a modular and modern front end application us
 
 Like with project one, the Unit 2 project is a chance to be creative and build something you should be proud of. You will be working individually for this project, but we'll be guiding you along the process and helping as you go. 
 
-You must submit your full project proposal to your squad leader by 10AM EST Friday.
+You must submit your full project proposal to your squad leader by 10AM EST Monday.
 
 Show us what you've got!
+
+## Prerequistes
+
+In order to help set you up for success you are required to do the following before you attempt to plan out your project:
+
+#### Reading
+
+ The [previous cohorts project 1 retrospective](previous-class-project-retrospective.md)
+
+There are alot of helpful hints and hindsight that were captured after the completion of project 1 which are sure to help provide some guidance on what to and not to do during this project. 
+
+#### Watch
+
+ [Mastering Markdown](https://masteringmarkdown.com/) - 34min
+
+ You will need to write and update markdown for this project as will be the case for all future projects so it's your responsibility to become familiar with the syntax.  
+
+---
 
 ## Requirements
 
