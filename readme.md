@@ -55,6 +55,10 @@ There are alot of helpful hints and hindsight that were captured after the compl
 - No pre-loaded `create-react-app` files or code.
 
 ## Necessary Deliverables
+
+#### Commits
+- Repo must contain frequent commits (min 15+) dating back to the beginning of the project.
+
 #### A Professional README
 - Refer to this [blog](https://medium.com/@meakaakka/a-beginners-guide-to-writing-a-kickass-readme-7ac01da88ab3) as a great resource on how to create a readme.
 
