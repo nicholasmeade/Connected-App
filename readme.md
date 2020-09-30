@@ -15,7 +15,7 @@ In order to help set you up for success you are required to do the following bef
 
 #### Reading
 
- The [previous cohorts project 1 retrospective](previous-class-project-retrospective.md)
+ The [previous cohorts project retrospective](previous-class-project-retrospective.md)
 
 There are alot of helpful hints and hindsight that were captured after the completion of project 1 which are sure to help provide some guidance on what to and not to do during this project. 
 
