@@ -32,10 +32,6 @@ There are alot of helpful hints and hindsight that were captured after the compl
 #### Your website must:
 - Be a working, interactive, React application.
 - Include data from a third-party API.
-    - Pull data into the application using an API  
-        [List of Public APIs](https://github.com/toddmotto/public-apis)  
-        [More APIs](https://github.com/abhishekbanthia/Public-APIs)  
-	[Instructor Recommended APIs](https://git.generalassemb.ly/sei-nyc-pirates/apis)
     - TRY OUT your API in the browser by making an fetch request before you get too emotionally invested in it, to make sure it works the way you think it does...**YOU ARE REQUIRED TO SHOW US YOU CAN RECEIVE THE DATA FOR YOUR PROPOSAL**
 - Include React Router with at least 2 routes
 - Have at least 5 separate components, using a readable file structure.
@@ -44,6 +40,51 @@ There are alot of helpful hints and hindsight that were captured after the compl
 - Implement responsive design using flexbox, grid, or another css framework.
 - Use React Hooks
 - Be deployed via [Netlify](https://www.netlify.com/).
+
+### 📋 List of API's
+
+ Pull data into the application using an API  
+  - [List of Public APIs](https://github.com/toddmotto/public-apis)  
+  - [More APIs](https://github.com/abhishekbanthia/Public-APIs)  
+
+Below is a non-exhaustive list of some free API's you can use. There are _many_ API's out there, however, so if you find one not on this list that you'd like to use, feel free! Please note that some may require signing up for an API key (e.g. the Marvel API).
+
+  1. Marvel: https://developer.marvel.com/
+  1. Star Wars: https://swapi.co/
+  1. Weather: https://openweathermap.org/api
+  1. News: https://newsapi.org/
+  1. Giphy: https://developers.giphy.com/
+  1. Pokemon: http://pokeapi.co/
+  1. Card Deck: https://deckofcardsapi.com/
+  1. Google Books: https://developers.google.com/books/
+  1. City of Chicago: https://data.cityofchicago.org/
+  1. Beer: https://www.brewerydb.com/developers
+  1. Chuck Norris: http://www.icndb.com/
+  1. Rick and Morty: https://rickandmortyapi.com/documentation/#rest
+  
+Lastly, the following sites congregates a bunch of API's together, so you can take a look through their libraries and try to find an API that interests you! Note, however, that not all API's are free and many listed may require payment. We **highly suggest** to use a free API for your first project dealing with one. 
+
+  1. https://github.com/toddmotto/public-apis
+  1. https://rapidapi.com/
+
+### Additional APIs
+
+#### Music
+
+* https://bandcamp.com/developer
+* https://developers.soundcloud.com/docs/api/reference
+
+#### Gov
+
+* https://developer.cityofnewyork.us/api/open311-inquiry
+
+#### Games
+
+* https://igdb.github.io/api/
+
+#### Social Media
+
+* https://developer.twitter.com/en/docs/tweets/search/overview
 
 #### Your code must:
 
