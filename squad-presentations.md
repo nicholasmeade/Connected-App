@@ -1,36 +1,7 @@
-### Joe 
-- Stasys 
-- Kim 
-- Kilah
-- Gourav 
-- Zack
-- Esteban 
-- Lien 
 
-### Alex
-- Sam 
-- Leah 
-- Bojan 
-- Hannah
-- Sean 
-- Sara 
-- Shayan 
+1. Joe
+2. Alex
+3. Stack
+4. Kenny
 
-### Stack
-- Frieda
-- Allisyn 
-- Riana 
-- Zane 
-- Erik 
-- Meena 
-- Chase
-
-### Kenny
-- Jaime 
-- Sampreet
-- Jesse
-- Quinton 
-- Tonimarie 
-- Jake 
-- Woodrow 
-- Adeola
+<img src="https://i.imgur.com/QR5WKaV.png" />
