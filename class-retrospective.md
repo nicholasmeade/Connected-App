@@ -4,13 +4,13 @@ Let’s take a few minutes as a class and capture as many insights possible in t
 
 ## Lessons Learned / Accomplishments
 
-What lessons did you learn during this project? What really wowed us when we learned them?
+> What lessons did you learn during this project? What really wowed us when we learned them?
 
 ## Problem Areas
 
-What areas of the project did you struggle with most? 
+> What areas of the project did you struggle with most? 
 
 ## Future Directions
 
-Based on lessons learned, and your problem areas, how will you adjust your learning/studying/project planning going into the next unit?
+> Based on lessons learned, and your problem areas, how will you adjust your learning/studying/project planning going into the next unit?
 
