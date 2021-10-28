@@ -3,8 +3,7 @@
 
 Let's kick it up a notch and build a modular and modern front end application using React!
 
-Like with project one, the Unit 2 project is a chance to be creative and build something you should be proud of. You will be working individually for this project, but we'll be guiding you along the process and helping as you go. 
-Show us what you've got!
+Like with project one, the Unit 2 project is a chance to be creative and build something you should be proud of. You will be working individually for this project.  Show us what you've got!
 
 ## Prerequistes
 
