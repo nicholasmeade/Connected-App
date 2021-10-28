@@ -7,10 +7,8 @@ Let’s take a few minutes as a class and capture as many insights possible in t
 > What lessons did you learn during this project? What really wowed us when we learned them?
 
 - console.log(everything)
-- Listen to kenny
 - Commit often! why? because things can go wrong.. sometimes we lose code. commits save your life
   - branching for features! 
-- use Tokens! space and use them wisely... but use them!!
 - Planning! 
   - Following the react architecture
 - Working with peers, developing enriching connections
