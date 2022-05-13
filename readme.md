@@ -35,7 +35,7 @@ There are alot of helpful hints and hindsight that were captured after the compl
 - Built mobile first 
 - Implement responsive design using flexbox, grid, or another css framework.
 - Use React Hooks
-- Be deployed on github pages https://github.com/gitname/react-gh-pages
+- Be deployed on github pages https://github.com/gitname/react-gh-pages (we will go over this together)
 
 ### 📋 List of API's
 
