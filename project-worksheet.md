@@ -2,14 +2,9 @@
 
 ## Project Links
 
-- [add your github repo link]()
-- [add your deployment link]()
+- [GitHub Enterprise](https://git.generalassemb.ly/nickmeade94/project-2-react)
 
 ## Project Description
-
-Use this section to describe your final project and perhaps any links to relevant sites that help convey the concept and\or functionality.
-
----
 
 My React App project will be an interactive Weather based app called Connected.
 
@@ -86,10 +81,7 @@ An example of the console.log output of 'current weather' of a given lat/long in
 }
 ```
 
-
 ## Wireframes
-
-Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe.
 
 - [Figma Wireframe](https://www.figma.com/file/u2rF5rWZXEG7n9LIIaJ1ov/React-App-Project?node-id=0%3A1)
 
@@ -107,7 +99,7 @@ Taken from the Wireframe:
 
 ### MVP/PostMVP - 5min
 
-The functionality will then be divided into two separate lists: MPV and PostMVP.  Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.  
+The functionality will then be divided into two separate lists: MPV and PostMVP.  Carefully decide what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.
 
 #### MVP EXAMPLE
 - Find and use external api 
@@ -118,14 +110,12 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 
 - Add localStorage or firebase for storage
 
-## Time/Priority Matrix
-
-[Link to my Time/Priority Matrix](https://www.figma.com/file/Zdm04bARDxHPVIOBOljeFc/T%2FP-Matrix)
-
 ## Components
 ##### Writing out your components and its descriptions isn't a required part of the proposal but can be helpful.
 
-Based on the initial logic defined in the previous sections try and breakdown the logic further into stateless/stateful components. 
+Based on the initial logic defined in the previous sections try and breakdown the logic further into stateless/stateful components.
+
+##### Although not required in the proposal as above I may make this table next week.
 
 | Component | Description | 
 | --- | :---: |  
@@ -133,18 +123,19 @@ Based on the initial logic defined in the previous sections try and breakdown th
 | Header | This will render the header include the nav | 
 | Footer | This will render the header include the nav | 
 
-Time frames are also key in the development cycle.  You have limited time to code all phases of the game.  Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe. Also, put a gif at the top of your Readme before you pitch, and you'll get a panda prize.
+##### Time Frames for Project 2
 
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Create React App Environment | H | 1hr| [x]hrs | [x]hrs |
-| Create All Components Structure | H | 2hrs| [x]hrs | [x]hrs |
-| Create Header/Footer | H | 2hrs| [x]hrs | [x]hrs |
-| Establish all API calls | H | 8hrs| [x]hrs | [x]hrs |
-| Create Routes for structure | H | 2hrs| [x]hrs | [x]hrs |
-| Styling for each page | H | 5hrs| [x]hrs | [x]hrs |
-| Styling for each component | H | 3hrs| [x]hrs | [x]hrs |
-| Total | H | 6hrs| 5hrs | 5hrs |
+| Project Development, Wireframes, Research | H | 5hrs| 5hrs | 5hrs |
+| Create React App Environment | H | 1hr| TBD | TBD |
+| Create All Components Structure | H | 4hrs| TBD | TBD |
+| Create Header/Footer | H | 2hrs| TBD | TBD |
+| Establish all API calls | H | 8hrs| TBD | TBD |
+| Create Routes for structure | H | 3hrs| TBD | TBD |
+| Styling for each page | M | 5hrs| TBD | TBD |
+| Styling for each component | M | 3hrs| TBD | TBD |
+| Total | H | 31hrs| TBD | TBD |
 
 ## Additional Libraries
  Use this section to list all supporting libraries and thier role in the project such as Axios, ReactStrap, D3, etc. 
