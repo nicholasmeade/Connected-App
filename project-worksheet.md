@@ -9,23 +9,101 @@
 
 Use this section to describe your final project and perhaps any links to relevant sites that help convey the concept and\or functionality.
 
+---
+
+My React App project will be an interactive Weather based app called Connected.
+
+The goal is for an interactive user experience to be 'connected' to other parts of the world and to search for what the current weather is based upon searching a zipcode and/or a location. The user is presented with a specialized greeting based on their location of what time it is and what their current weather is upon screen load. When they do their search below where this is presented, an API call is executed to update the weather stats of the location they looked up.
+
+An additional page for interactivity will be Historical Weather. The user can interact to be 'connected' to other parts of the world and search up a location and choose a specific date to see what the weather would have been.
+
+An About page will be included to summarize what was used to create the app - webpage development and data utilization with the API(s) used.
+
 ## API
 
-Use this section to include info about the API you have chosen and a code snippet of the data that it returns and is required for your project. 
+Use this section to include info about the API you have chosen and a code snippet of the data that it returns and is required for your project.
 
+I've had some prior experience in our cohort with the Open Weather API. I researched a lot of other weather APIs, a lot of them on the general reference for free APIs had a limited scope for 'free' accounts, mostly locking me out of looking at historical data behind a pay wall. For the sake of a MVP I can utilize the Open Weather API for both the current weather and historical weather (limited to a few hours ago as far as I can understand, will be doing more experimentation) API calls I will be making.
+
+An example of the Open Weather API being used can be seen in the code block below:
 
 ```
-{data: {} }
+const apiKey = "ecbafc8bc682243cadc5b7330751bcef"
+const url = "https://api.openweathermap.org/data/2.5/weather?lat=40.7128&lon=-74.0060&appid="
+
+useEffect(() => {
+  fetch(`${url}${apiKey}`)
+  .then(response => response.json())
+  .then(data => console.log(data))
+})
+```
+
+An example of the console.log output of 'current weather' of a given lat/long input can be seen below:
+
+```
+{
+    "coord": {
+        "lon": -74.0067,
+        "lat": 40.7051
+    },
+    "weather": [
+        {
+            "id": 804,
+            "main": "Clouds",
+            "description": "overcast clouds",
+            "icon": "04d"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 293.05,
+        "feels_like": 293.24,
+        "temp_min": 288.72,
+        "temp_max": 296.99,
+        "pressure": 1023,
+        "humidity": 82
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 2.57,
+        "deg": 60
+    },
+    "clouds": {
+        "all": 100
+    },
+    "dt": 1652475959,
+    "sys": {
+        "type": 2,
+        "id": 2039034,
+        "country": "US",
+        "sunrise": 1652434860,
+        "sunset": 1652486633
+    },
+    "timezone": -14400,
+    "id": 5128581,
+    "name": "New York",
+    "cod": 200
+}
 ```
 
 
 ## Wireframes
 
-Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe. Also, define the the React components and the architectural design of your app.
+Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe.
 
-- [add link to your wireframes]()
-- [add link to your react architecture]()
+- [Figma Wireframe](https://www.figma.com/file/u2rF5rWZXEG7n9LIIaJ1ov/React-App-Project?node-id=0%3A1)
 
+Define the the React components and the architectural design of your app.
+
+Taken from the Wireframe:
+
+- landing page will display the current local weather forecast specific to the user location with an API call
+- landing page and subsequent pages will display the current time specific to the user location
+- search feature to look by zipcode and/or city to display weather in other parts of the world
+- upon searching the API call will run to extract the specific data to be back on to the page
+- secondary page will be running another API call to look at historical weather data at a certain time period and location
+- two minimum routes will be to the historical weather component and to an ‘about’ component that describes the API used for the project
+- minimum five components will be: CurrentWeather.js - HistoricalWeather.js - About.js - UserTime.js - CurrentSearch.js - HistoricalSearch.js
 
 ### MVP/PostMVP - 5min
 
@@ -40,6 +118,10 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 
 - Add localStorage or firebase for storage
 
+## Time/Priority Matrix
+
+[Link to my Time/Priority Matrix](https://www.figma.com/file/Zdm04bARDxHPVIOBOljeFc/T%2FP-Matrix)
+
 ## Components
 ##### Writing out your components and its descriptions isn't a required part of the proposal but can be helpful.
 
@@ -51,13 +133,17 @@ Based on the initial logic defined in the previous sections try and breakdown th
 | Header | This will render the header include the nav | 
 | Footer | This will render the header include the nav | 
 
-
 Time frames are also key in the development cycle.  You have limited time to code all phases of the game.  Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe. Also, put a gif at the top of your Readme before you pitch, and you'll get a panda prize.
 
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Adding Form | H | 3hrs| 3.5hrs | 3.5hrs |
-| Working with API | H | 3hrs| 2.5hrs | 2.5hrs |
+| Create React App Environment | H | 1hr| [x]hrs | [x]hrs |
+| Create All Components Structure | H | 2hrs| [x]hrs | [x]hrs |
+| Create Header/Footer | H | 2hrs| [x]hrs | [x]hrs |
+| Establish all API calls | H | 8hrs| [x]hrs | [x]hrs |
+| Create Routes for structure | H | 2hrs| [x]hrs | [x]hrs |
+| Styling for each page | H | 5hrs| [x]hrs | [x]hrs |
+| Styling for each component | H | 3hrs| [x]hrs | [x]hrs |
 | Total | H | 6hrs| 5hrs | 5hrs |
 
 ## Additional Libraries
