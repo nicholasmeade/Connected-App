@@ -138,7 +138,10 @@ Based on the initial logic defined in the previous sections try and breakdown th
 | Total | H | 31hrs| TBD | TBD |
 
 ## Additional Libraries
- Use this section to list all supporting libraries and thier role in the project such as Axios, ReactStrap, D3, etc. 
+ Use this section to list all supporting libraries and thier role in the project such as Axios, ReactStrap, D3, etc.
+
+##### [StackOverFlow for obtaining user's local time](https://stackoverflow.com/questions/4673527/converting-milliseconds-to-a-date-jquery-javascript)
+##### [MDN Docs, Especially with Obtaining User Date/Time Data](https://developer.mozilla.org/en-US/)
 
 ## Code Snippet
 
