@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App">
       <header className="header">
-        <Link to="/currentweather/">Current Weather</Link>
+        <Link to="/">Current Weather</Link>
         <Link to="/historicalweather/">Historical Weather</Link>
         <Link to="/">-Connected-</Link>
         <Link to="/about/">About</Link>
