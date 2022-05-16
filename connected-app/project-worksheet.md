@@ -142,6 +142,9 @@ Based on the initial logic defined in the previous sections try and breakdown th
 
 ##### [StackOverFlow for obtaining user's local time](https://stackoverflow.com/questions/4673527/converting-milliseconds-to-a-date-jquery-javascript)
 ##### [MDN Docs, Especially with Obtaining User Date/Time Data](https://developer.mozilla.org/en-US/)
+##### [C-SharpCorner](https://www.c-sharpcorner.com/blogs/greeting-to-the-user-according-to-the-time-using-javascript1)
+- helped walk through an example to have a 'welcome' message to a user based upon their local time
+- added my own logic for what I specifically wanted to do, received help from instructor with correcting my function
 
 ## Code Snippet
 

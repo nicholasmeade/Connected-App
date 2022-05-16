@@ -10,13 +10,14 @@ const CurrentWeather = () => {
     const userGreeting = () => {
         const userDate = new Date();
         const hour = userDate.getHours();
+        console.log(hour)
         let greeting
             if (hour < 12) {
-                greeting = "Good morning." 
-            } else if (hour > 12 && hour < 17) {
-                greeting = "Good afternoon."
-            } else if (hour > 17 && hour) {
-                greeting = "Good evening."
+                greeting = "Good morning!" 
+            } else if (hour >= 12 && hour < 17) {
+                greeting = "Good afternoon!"
+            } else if (hour >= 17 && hour < 24) {
+                greeting = "Good evening!"
             } else {
                 greeting = "invalid time"
             }
