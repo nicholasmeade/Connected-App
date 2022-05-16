@@ -10,7 +10,6 @@ const CurrentWeather = () => {
     const userGreeting = () => {
         const userDate = new Date();
         const hour = userDate.getHours();
-        console.log(hour)
         let greeting
             if (hour < 12) {
                 greeting = "Good morning!" 
