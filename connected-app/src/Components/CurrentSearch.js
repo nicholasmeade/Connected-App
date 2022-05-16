@@ -1,6 +1,19 @@
 import './Components.css';
+import { useEffect } from 'react';
 
 const CurrentSearch = () => {
+
+// open weather API info
+const apiKey = "ecbafc8bc682243cadc5b7330751bcef"
+const url = "https://api.openweathermap.org/data/2.5/weather?lat=40.7128&lon=-74.0060&appid="
+
+// fetching weather info from API
+useEffect(() => {
+    fetch(`${url}${apiKey}`)
+    .then(response => response.json())
+    .then(data => console.log(data))
+})
+
     return ( 
         <div className="currentsearch-container">
             <div className="user-current-weather">
