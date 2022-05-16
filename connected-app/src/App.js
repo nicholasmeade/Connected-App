@@ -7,12 +7,13 @@ import About from "./Components/About";
 function App() {
   return (
     <div className="App">
-      <header>
+      <header className="header">
         <Link to="/currentweather/">Current Weather</Link>
         <Link to="/historicalweather/">Historical Weather</Link>
+        <Link to="/">-Connected-</Link>
         <Link to="/about/">About</Link>
       </header>
-      <main>
+      <main className="main">
         <Routes>
           <Route path="/" element={<CurrentWeather />}/>
           <Route path="/historicalweather/" element={<HistoricalWeather />}/>
