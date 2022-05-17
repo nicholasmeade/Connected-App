@@ -18,30 +18,28 @@ const CurrentSearch = () => {
     const updateSearchWeather = (event) => {
         setSearchWeather(event.target.value)
     }
-    console.log(searchWeather)
 
     // handling submission of user's input (zipcode, state, country)
     const handleSubmit = (event) => {
         // prevent page reload when submitting form
         event.preventDefault()
         // fetching weather info from API
-        fetch(`"https://api.openweathermap.org/data/2.5/weather?q=${searchWeather}&appid="${apiKey}${units}`)
+        fetch(`https://api.openweathermap.org/data/2.5/weather?q=${searchWeather}&appid=${apiKey}${units}`)
             .then(response => response.json())
-            .then(data => console.log(data))
-                
+            .then(data => {
                 // reset input field to empty string
-                // setSearchWeather('');
+                setSearchWeather('');
                 // if user input is invalid; has key/value pairs of "cod": "404" and "message": "city not found"
-                // if (data.cod) {
+                // if (data === data.cod) {
                 //     setErrorMessage(data.cod)
                 // if user input is valid
                 // } else {
-                //     setUserWeather(data)
-                //     setSearchWeather('')
+                    setUserWeather(data)
+                    setSearchWeather('')
                 // }
-            // })
+            })
         // if there is an error upon API request
-        // .catch(() => setErrorMessage('Sorry, please try again'))
+        .catch(() => setErrorMessage('Sorry, please try again'))
     }
 
     // create weather data display if weather data is in userWeather state
@@ -62,6 +60,7 @@ const CurrentSearch = () => {
                 <h2>Your weather today in (user location) is:</h2>
             </div>
             <div className="weather-data">
+                <p>{errorMessage}</p>
                 {weatherDisplay}
             </div>
             <div className="user-search-calltoaction">
