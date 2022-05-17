@@ -10,6 +10,7 @@ const HistoricalWeather = () => {
             <HistoricalSearch />
             <footer>
                 <p><Link to="/about/">About</Link></p>
+                <p><Link to="/">Return to home</Link></p>
             </footer>
         </div>
      );

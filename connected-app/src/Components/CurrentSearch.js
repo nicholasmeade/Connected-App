@@ -56,9 +56,9 @@ const CurrentSearch = () => {
 
     return ( 
         <div className="currentsearch-container">
-            <div className="user-current-weather">
+            {/* <div className="user-current-weather">
                 <h2>Your weather today in (user location) is:</h2>
-            </div>
+            </div> */}
             <div className="weather-data">
                 <p>{errorMessage}</p>
                 {weatherDisplay}
