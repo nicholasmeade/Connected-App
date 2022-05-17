@@ -30,13 +30,13 @@ const CurrentSearch = () => {
                 // reset input field to empty string
                 setSearchWeather('');
                 // if user input is invalid; has key/value pairs of "cod": "404" and "message": "city not found"
-                // if (data === data.cod) {
-                //     setErrorMessage(data.cod)
+                if (data.cod) {
+                    setErrorMessage(data)
                 // if user input is valid
-                // } else {
+                } else {
                     setUserWeather(data)
                     setSearchWeather('')
-                // }
+                }
             })
         // if there is an error upon API request
         .catch(() => setErrorMessage('Sorry, please try again'))
@@ -60,7 +60,7 @@ const CurrentSearch = () => {
                 <h2>Your weather today in (user location) is:</h2>
             </div> */}
             <div className="weather-data">
-                <p>{errorMessage}</p>
+                <p>{errorMessage.message}</p>
                 {weatherDisplay}
             </div>
             <div className="user-search-calltoaction">
