@@ -10,7 +10,7 @@ const apiKey = "e15eb896014246a5824164647221705"
 // how to properly fetch the data from API
     // capturing the date input (YYYY-MM-DD): {userWeather.forecast.forecastday[0].date}
     // capturing sunrise (xx:xx AM): {userWeather.forecast.forecastday[0].astro.sunrise}
-    // capturing sunset (xx:xx AM): {userWeather.forecast.forecastday[0].astro.sunset}
+    // capturing sunset (xx:xx PM): {userWeather.forecast.forecastday[0].astro.sunset}
     // capturing max temp (temp(F)): {userWeather.forecast.forecastday[0].day.maxtemp_f}
     // capturing min temp (temp(F)): {userWeather.forecast.forecastday[0].day.mintemp_f}
     // capturing the condition (code, icon, text(condition)): {userWeather.forecast.forecastday[0].day.condition.code/icon/text}
@@ -57,9 +57,12 @@ const HistoricalSearch = () => {
                     setErrorMessage(data.error)
                     // reset userWeather
                     setUserWeather(null)
+                // if user input is valid
                 } else {
                     // set userWeather to be the data fetched by the API
                     setUserWeather(data)
+                    // reset errorMessage (if the user previously had the error message so it's no longer on the screen)
+                    setErrorMessage('')
                 }
             })
         // if there is an error upon API request    
