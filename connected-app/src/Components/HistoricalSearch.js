@@ -51,8 +51,19 @@ const HistoricalSearch = () => {
                 // reset both input fields to be empty strings
                 setSearchLocation('')
                 setSearchDate('')
-                setUserWeather(data)
+                // if user input is invalid; starts with object "error", which contains an object of ""code:" 1006, "message": No matching location found.""
+                if (data.error) {
+                    // save error data to error message
+                    setErrorMessage(data.error)
+                    // reset userWeather
+                    setUserWeather(null)
+                } else {
+                    // set userWeather to be the data fetched by the API
+                    setUserWeather(data)
+                }
             })
+        // if there is an error upon API request    
+        .catch(() => setErrorMessage('Sorry, please try again'))
     }
 
     // create weather display if weather data is in userWeather state
@@ -75,6 +86,7 @@ const HistoricalSearch = () => {
     return ( 
         <div className="historicalsearch-container">
             <div className="historical-search-display">
+                <p>{errorMessage.message}</p>
                 {historicalWeatherDisplay}
             </div>
             <div className="historical-calltoaction">
