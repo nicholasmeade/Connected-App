@@ -23,6 +23,7 @@
   color: rgb(255, 255, 255);
 }
 
+/* flexbox for header */
 .header {
   display: flex;
   justify-content: space-around;
@@ -32,6 +33,7 @@
   background: rgb(80, 80, 80);
 }
 
+/* styling and hover effects for header buttons */
 .header button {
   background: none;
   border-radius: 10px;
@@ -54,6 +56,10 @@
 .about-tab {
   display: none;
 }
+
+
+
+
 
 /* CurrentWeather styling */
 
@@ -90,6 +96,7 @@
   font-size: 25px;
 }
 
+/* styling and animation of submit button */
 .user-submit-button {
   margin-left: 10px;
   border-radius: 5px;
@@ -97,7 +104,6 @@
   background-color: azure;
 }
 
-/* animation of submit button on hover */
 .user-submit-button:hover {
   cursor: pointer;
   transition: all 0.3s ease;
@@ -105,9 +111,25 @@
   background-color: bisque;
 }
 
-.searchhistorylink {
+/* styling of the search result of the weather */
+.search-result, .searchhistorylink {
+  font-style: 'Nunito', sans-serif;
   text-decoration: none;
+  color: black;
 }
+
+.searchhistorylink {
+  color: rgb(255, 255, 255);
+}
+
+.searchhistorylink:hover {
+  transition: all 0.3s ease;
+  color:rgb(33, 130, 130);
+}
+
+
+
+
 
 /* HistoricalWeather styling */
 
@@ -116,11 +138,26 @@
   justify-content: space-around;
 }
 
+
+
+
+
 /* HistoricalSearch styling */
+
+
+
+
 
 /* About styling */
 
+
+
+
+
 /* CurrentTime styling */
+
+
+
 
 
 /* TABLET DESIGN */

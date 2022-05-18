@@ -53,11 +53,11 @@ const CurrentSearch = () => {
     let weatherDisplay = ''
     if (userWeather !== null) {
         weatherDisplay = (
-            <div>
+            <div className="search-result">
                 <h2>{userWeather.name}'s current weather is...</h2>
                 <h3>{userWeather.main.temp}°F</h3>
                 <h3>Today's high is {userWeather.main.temp_max}°F and today's low is {userWeather.main.temp_min}°F.</h3>
-                <h3>Want to try <span className="appname">Connecting</span> to the past? Try <Link className="searchhistorylink"  to="/historicalweather/">Historical Weather</Link>.</h3>
+                <h3>Want to try <span className="appname">Connecting</span> to the past? Try <Link className="searchhistorylink"  to="/historicalweather/">Historical Weather!</Link></h3>
             </div>
         )
     }
