@@ -8,8 +8,10 @@ const CurrentWeather = () => {
 
     // dynamic user greeting based on their time zone
     const userGreeting = () => {
+        // obtain the current date and hour of the user
         const userDate = new Date();
         const hour = userDate.getHours();
+        // logic to toggle between greetings based on the hour
         let greeting
             if (hour < 12) {
                 greeting = "Good morning!" 
@@ -26,8 +28,8 @@ const CurrentWeather = () => {
     return ( 
         <div className="current-container">
             <div className="local-time">
-                    <h2>Today's date is {date.toLocaleDateString()}.</h2>
-                    <h2>Your time is currently {date.toLocaleTimeString()}.</h2>
+                    <h2>Today's date is {date.toLocaleDateString()}</h2>
+                    <h2>Your time is currently {date.toLocaleTimeString()}</h2>
             </div>
             <div className="user-greeting">
                 <h2>{userGreeting()}</h2>
@@ -37,7 +39,7 @@ const CurrentWeather = () => {
             </div>
             <CurrentSearch />
             <footer className="currentweather-footer">
-                <p><Link className="aboutlink" to="/about/">About</Link></p>
+                <button><Link className="aboutlink" to="/about/">About</Link></button>
             </footer>
         </div>
      );

@@ -8,8 +8,8 @@ const HistoricalWeather = () => {
             <CurrentTime />
             <HistoricalSearch />
             <footer className="historical-footer">
-                <p><Link to="/about/">About</Link></p>
-                <p><Link to="/">Return to home</Link></p>
+                <button><Link className="aboutlink" to="/about/">About</Link></button>
+                <button><Link className="return-home-link" to="/">Return to home</Link></button>
             </footer>
         </div>
      );

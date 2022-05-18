@@ -73,7 +73,7 @@ const HistoricalSearch = () => {
     let historicalWeatherDisplay = ''
     if (userWeather !== null) {
         historicalWeatherDisplay = (
-            <div>
+            <div className="search-result">
                 <h2>On {userWeather.forecast.forecastday[0].date}, {userWeather.location.name}'s weather forecast was...</h2>
                 <h3>An average temperature of {userWeather.forecast.forecastday[0].day.avgtemp_f}°F.</h3>
                 <h3>The high was {userWeather.forecast.forecastday[0].day.maxtemp_f}°F and the low was {userWeather.forecast.forecastday[0].day.mintemp_f}°F.</h3>
@@ -94,12 +94,16 @@ const HistoricalSearch = () => {
                 {historicalWeatherDisplay}
             </div>
             <div className="historical-calltoaction">
-                <h2>Be Connected to the world's past - choose a date and location to see what the weather was!</h2>
+                <h2><span className="appname">Be Connected</span> to the world's past - choose a date and location to see what the weather was!</h2>
                 <form onSubmit={handleSubmit}>
                     <input onChange={updateSearchLocation} value={searchLocation} type="text" placeholder="Zip, Town, State or Country"/>
                     <input onChange={updateSearchDate} value={searchDate} type="text" placeholder="Date (YYYY-MM-DD)"/>
-                    <input type="submit" value="Connect!"/>
+                    <input className="user-submit-button" type="submit" value="Connect!"/>
                 </form>
+                <div className="searchparameters">
+                    <p>Note: the limit to look back is 7 days! This includes today's current date.</p>
+                    <p>Example: if today's date was 2022-05-10, you can only look back to 2022-05-04.</p>
+                </div>
             </div>
         </div>
      );

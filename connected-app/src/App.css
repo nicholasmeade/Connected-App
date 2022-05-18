@@ -13,6 +13,8 @@
   display: flex;
   justify-content: flex-end;
   padding-right: 40px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 18px;
 }
 
 /* remove underlines from links, font styling */
@@ -82,12 +84,44 @@
   font-family: 'Nunito', sans-serif;
 }
 
-/* removing underlines from link */
-.aboutlink {
+/* removing underlines from link and styling */
+.aboutlink, .return-home-link {
   text-decoration: none;
   font-family: 'Nunito', sans-serif;
   font-size: 25px;
 }
+
+.aboutlink:hover, .return-home-link:hover {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: cyan;
+}
+
+/* styling and hover effects for header and footer buttons */
+.header button, footer button {
+  background: none;
+  border-radius: 10px;
+  border-width: 0px;
+}
+
+.header button:hover {
+  cursor: pointer;
+  background: rgb(100, 255, 255);
+  transition: all 0.3s ease;
+}
+
+footer {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+footer button:hover {
+  cursor: pointer;
+  background: rgb(80, 80, 80);
+  transition: all 0.3s ease;
+}
+
+
 
 /* CurrentSearch styling */
 
@@ -113,18 +147,18 @@
 
 /* styling of the search result of the weather */
 .search-result, .searchhistorylink {
-  font-style: 'Nunito', sans-serif;
-  text-decoration: none;
+  font-family: 'Nunito', sans-serif;
   color: black;
 }
 
 .searchhistorylink {
-  color: rgb(255, 255, 255);
+  color:rgb(33, 130, 130);
+  text-decoration-color: black;
 }
 
 .searchhistorylink:hover {
   transition: all 0.3s ease;
-  color:rgb(33, 130, 130);
+  color: rgb(254, 255, 174);
 }
 
 
@@ -132,6 +166,14 @@
 
 
 /* HistoricalWeather styling */
+
+
+
+.historical-calltoaction {
+  font-family: 'Oxygen', sans-serif;
+  font-size: 15px;
+}
+
 
 .historical-footer {
   display: flex;
@@ -144,7 +186,10 @@
 
 /* HistoricalSearch styling */
 
-
+.searchparameters p {
+  font-family: 'Nunito', sans-serif;
+  font-size: 18px;
+}
 
 
 
