@@ -69,10 +69,10 @@ const CurrentSearch = () => {
                 {weatherDisplay}
             </div>
             <div className="user-search-calltoaction">
-                <h2><span className="appname">Be Connected</span> - search anywhere in the world to see what the weather is!</h2>
+                <h2><span className="appname">Be Connected</span><span className="calltoaction"> - search anywhere in the world to see what the weather is!</span></h2>
                 <form onSubmit={handleSubmit}>
                     <input onChange={updateSearchWeather} value={searchWeather} type="text" placeholder="Zip, Town, State or Country"/>
-                    <input type="submit" value="Connect!" />
+                    <input className="user-submit-button" type="submit" value="Connect!" />
                 </form>
             </div>
         </div>
