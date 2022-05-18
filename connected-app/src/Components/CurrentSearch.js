@@ -1,5 +1,7 @@
 import './Components.css';
 import { useEffect, useState } from 'react';
+import HistoricalWeather from './HistoricalWeather';
+import {Routes, Route, Link, Navigate} from "react-router-dom";
 
 // API by city call = https://api.openweathermap.org/data/2.5/weather?q={city name},{state code},{country code}&appid={API key}
 // open weather API info
@@ -54,7 +56,8 @@ const CurrentSearch = () => {
             <div>
                 <h2>{userWeather.name}'s current weather is...</h2>
                 <h3>{userWeather.main.temp}°F</h3>
-                <h4>Today's high is {userWeather.main.temp_max}°F and today's low is {userWeather.main.temp_min}°F.</h4>
+                <h3>Today's high is {userWeather.main.temp_max}°F and today's low is {userWeather.main.temp_min}°F.</h3>
+                <h3>Want to try <span className="appname">Connecting</span> to the past? Try <Link className="searchhistorylink"  to="/historicalweather/">Historical Weather</Link>.</h3>
             </div>
         )
     }
@@ -66,7 +69,7 @@ const CurrentSearch = () => {
                 {weatherDisplay}
             </div>
             <div className="user-search-calltoaction">
-                <h2>Be Connected - search anywhere in the world to see what the weather is!</h2>
+                <h2><span className="appname">Be Connected</span> - search anywhere in the world to see what the weather is!</h2>
                 <form onSubmit={handleSubmit}>
                     <input onChange={updateSearchWeather} value={searchWeather} type="text" placeholder="Zip, Town, State or Country"/>
                     <input type="submit" value="Connect!" />

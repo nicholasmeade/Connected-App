@@ -7,7 +7,6 @@
 
 .App {
   text-align: center;
-  /* background-image: linear-gradient(to bottom right, rgb(46, 222, 46), rgb(75, 176, 248)); */
 }
 
 .header {
@@ -35,7 +34,37 @@
 
 /* CurrentWeather styling */
 
+.local-time {
+  display: flex;
+  justify-content: space-around;
+}
+
+.app-intro {
+  font-family: 'Oxygen', sans-serif;
+  font-size: 25px;
+}
+
+.appname {
+  font-family: 'Koulen', cursive;
+  font-size: 30px;
+}
+
+.local-time {
+  font-family: 'Nunito', sans-serif;
+}
+
+/* removing underlines from link */
+.aboutlink {
+  text-decoration: none;
+  font-family: 'Nunito', sans-serif;
+  font-size: 25px;
+}
+
 /* CurrentSearch styling */
+
+.searchhistorylink {
+  text-decoration: none;
+}
 
 /* HistoricalWeather styling */
 

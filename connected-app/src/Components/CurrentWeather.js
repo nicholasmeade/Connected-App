@@ -25,18 +25,19 @@ const CurrentWeather = () => {
 
     return ( 
         <div className="current-container">
+            <div className="local-time">
+                    <h2>Today's date is {date.toLocaleDateString()}.</h2>
+                    <h2>Your time is currently {date.toLocaleTimeString()}.</h2>
+            </div>
             <div className="user-greeting">
                 <h2>{userGreeting()}</h2>
             </div>
             <div className="app-intro">
-                <p>Welcome to Connected - a small space on the internet to feel more connected with all parts of the world, both now and in the past.</p>
-            </div>
-            <div className="local-time">
-                    <h2>Your time is currently {date.toLocaleTimeString()}. Today's date is {date.toLocaleDateString()}.</h2>
+                <p>Welcome to <span className="appname">Connected</span> - a small space on the internet to feel more connected with all parts of the world, both now and in the past.</p>
             </div>
             <CurrentSearch />
             <footer className="currentweather-footer">
-                <p><Link to="/about/">About</Link></p>
+                <p><Link className="aboutlink" to="/about/">About</Link></p>
             </footer>
         </div>
      );
