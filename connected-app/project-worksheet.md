@@ -145,6 +145,8 @@ Based on the initial logic defined in the previous sections try and breakdown th
 ##### [C-SharpCorner](https://www.c-sharpcorner.com/blogs/greeting-to-the-user-according-to-the-time-using-javascript1)
 - helped walk through an example to have a 'welcome' message to a user based upon their local time
 - added my own logic for what I specifically wanted to do, received help from instructor with correcting my function
+##### [CodeGrepper](https://www.codegrepper.com/code-examples/css/background+color+gradient+no+repeat+full+screen)
+- helped to figure out how to make my background gradient of my webpage not repeat encompassing the entire React App
 
 ## Code Snippet
 
