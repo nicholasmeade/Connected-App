@@ -8,10 +8,9 @@ function App() {
   return (
     <div className="App">
       <header className="header">
-        <Link to="/">Current Weather</Link>
-        <Link to="/historicalweather/">Historical Weather</Link>
-        <Link to="/">-Connected-</Link>
-        <Link to="/about/">About</Link>
+        <Link className="weather-tab" to="/">Current Weather</Link>
+        <Link className="historical-tab" to="/historicalweather/">Historical Weather</Link>
+        <Link className="about-tab" to="/about/">About</Link>
       </header>
       <main className="main">
         <Routes>

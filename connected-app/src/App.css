@@ -1,3 +1,66 @@
+/* fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Koulen&family=Nunito:wght@500&family=Oxygen&display=swap');
+/* font-family: 'Koulen', cursive; | font-family: 'Nunito', sans-serif; | font-family: 'Oxygen', sans-serif; */
+
+/* MOBILE FIRST DESIGN */
+
 .App {
   text-align: center;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* remove underlines from links, font styling */
+.weather-tab, .historical-tab, .about-tab {
+  text-decoration: none;
+  font-family: 'Nunito', sans-serif;
+  font-size: 25px;
+}
+
+/* hide about tab on mobile view */
+.about-tab {
+  display: none;
+}
+
+.corner-time {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 40px;
+}
+
+/* CurrentWeather styling */
+
+/* CurrentSearch styling */
+
+/* HistoricalWeather styling */
+
+.historical-footer {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* HistoricalSearch styling */
+
+/* About styling */
+
+/* CurrentTime styling */
+
+
+/* TABLET DESIGN */
+@media screen and (min-width: 760px) {
+
+}
+
+/* DESKTOP DESIGN */
+@media screen and (min-width: 1200px) {
+
+/* return the about tab on desktop view */
+.about-tab {
+  display: flex;
+}
+
 }

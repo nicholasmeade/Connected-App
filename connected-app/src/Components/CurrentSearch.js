@@ -53,8 +53,8 @@ const CurrentSearch = () => {
         weatherDisplay = (
             <div>
                 <h2>{userWeather.name}'s current weather is...</h2>
-                <h3>{userWeather.main.temp}°</h3>
-                <h4>Today's high is {userWeather.main.temp_max}° and today's low is {userWeather.main.temp_min}°.</h4>
+                <h3>{userWeather.main.temp}°F</h3>
+                <h4>Today's high is {userWeather.main.temp_max}°F and today's low is {userWeather.main.temp_min}°F.</h4>
             </div>
         )
     }

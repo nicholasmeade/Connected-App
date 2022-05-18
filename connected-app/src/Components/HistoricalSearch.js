@@ -75,12 +75,13 @@ const HistoricalSearch = () => {
         historicalWeatherDisplay = (
             <div>
                 <h2>On {userWeather.forecast.forecastday[0].date}, {userWeather.location.name}'s weather forecast was...</h2>
-                <h3>An average temperature of {userWeather.forecast.forecastday[0].day.avgtemp_f}°.</h3>
-                <h3>The high was {userWeather.forecast.forecastday[0].day.maxtemp_f}° and the low was {userWeather.forecast.forecastday[0].day.mintemp_f}°.</h3>
+                <h3>An average temperature of {userWeather.forecast.forecastday[0].day.avgtemp_f}°F.</h3>
+                <h3>The high was {userWeather.forecast.forecastday[0].day.maxtemp_f}°F and the low was {userWeather.forecast.forecastday[0].day.mintemp_f}°F.</h3>
+                <h3>Sunrise was at {userWeather.forecast.forecastday[0].astro.sunrise} and sunset was at {userWeather.forecast.forecastday[0].astro.sunset}.</h3>
                 <h2>If you were in {userWeather.location.name} at 12PM on {userWeather.forecast.forecastday[0].date}...</h2>
-                <h3>The current temperature was {userWeather.forecast.forecastday[0].hour[12].temp_f}°.</h3>
-                <h3>The feels-like temperature was {userWeather.forecast.forecastday[0].hour[12].feelslike_f}°.</h3>
-                <h3>If you were outside at 12PM, it was {userWeather.forecast.forecastday[0].hour[12].condition.text}.</h3>
+                <h3>The current temperature was {userWeather.forecast.forecastday[0].hour[12].temp_f}°F.</h3>
+                <h3>The feels-like temperature was {userWeather.forecast.forecastday[0].hour[12].feelslike_f}°F.</h3>
+                <h3>If you were outside at 12PM, the current condition was "{userWeather.forecast.forecastday[0].hour[12].condition.text}".</h3>
                 <h3><img src={userWeather.forecast.forecastday[0].hour[12].condition.icon} alt="Weather condition icon"/></h3>
             </div>
         )
@@ -95,8 +96,8 @@ const HistoricalSearch = () => {
             <div className="historical-calltoaction">
                 <h2>Be Connected to the world's past - choose a date and location to see what the weather was!</h2>
                 <form onSubmit={handleSubmit}>
-                    <input onChange={updateSearchLocation} value={searchLocation} type="text" placeholder=""/>
-                    <input onChange={updateSearchDate} value={searchDate} type="text" placeholder=""/>
+                    <input onChange={updateSearchLocation} value={searchLocation} type="text" placeholder="Zip, Town, State or Country"/>
+                    <input onChange={updateSearchDate} value={searchDate} type="text" placeholder="Date (YYYY-MM-DD)"/>
                     <input type="submit" value="Connect!"/>
                 </form>
             </div>
