@@ -2,7 +2,7 @@
 
 ## Project Links
 
-- [GitHub Enterprise](https://git.generalassemb.ly/nickmeade94/project-2-react)
+- [GitHub Enterprise](https://github.com/nicholasmeade/project2-react-app/tree/master/connected-app)
 
 ## Project Description
 
@@ -128,14 +128,16 @@ Based on the initial logic defined in the previous sections try and breakdown th
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
 | Project Development, Wireframes, Research | H | 5hrs| 5hrs | 5hrs |
-| Create React App Environment | H | 1hr| TBD | TBD |
-| Create All Components Structure | H | 4hrs| TBD | TBD |
-| Create Header/Footer | H | 2hrs| TBD | TBD |
-| Establish all API calls | H | 8hrs| TBD | TBD |
-| Create Routes for structure | H | 3hrs| TBD | TBD |
-| Styling for each page | M | 5hrs| TBD | TBD |
-| Styling for each component | M | 3hrs| TBD | TBD |
-| Total | H | 31hrs| TBD | TBD |
+| Create React App Environment | H | 1hr| .5hr | .5hr |
+| Create All Components Structure | H | 4hrs| 2hrs | 2hrs |
+| Create Header/Footer | H | 2hrs| 2hrs | 2hrs |
+| Establish all API calls | H | 8hrs| 8hrs | 8hrs |
+| Create Routes for structure | H | 3hrs| 1hr | 1hr |
+| Styling for each page | M | 5hrs| 5hrs | 5hrs |
+| Styling for each component | M | 3hrs| 3hrs | 3hrs |
+| Total | H | 31hrs| 26.5hrs | 26.5hrs |
+
+MVP was achieved far earlier than expected. Approximately 16 hours was invested into stretch goals. Total time investment into Project 2 is ~42.5hrs.
 
 ## Additional Libraries
  Use this section to list all supporting libraries and thier role in the project such as Axios, ReactStrap, D3, etc.
@@ -150,13 +152,28 @@ Based on the initial logic defined in the previous sections try and breakdown th
 ##### [W3 Docs](https://www.w3docs.com/snippets/javascript/how-to-subtract-days-from-date-in-javascript.html)
 ##### [StackOverFlow](https://stackoverflow.com/questions/1296358/how-to-subtract-days-from-a-plain-date)
 - above two articles helped with obtaining a user's local time and date and how to subtract days from the current date, this was utilized in having a dynamic user instruction in the historical weather search
+##### [W3 Schools](https://www.w3schools.com/)
 
 ## Code Snippet
 
 Use this section to include a brief code snippet of functionality that you are proud of an a brief description.  Code snippet should not be greater than 10 lines of code. 
 
+```js
+    // obtain the current date of the user
+    const userDate = new Date();
+
+    // make 7 day difference of the current date of the user
+    const maxHistory = new Date().setDate(userDate.getDate() -7);
+
+    // set 7 day difference to be a usable date
+    const dateHistory = new Date(maxHistory);
 ```
-function reverse(string) {
-	// here is the code to reverse a string of text
-}
+
+This was a stretch goal I accomplished. The above code allows me to give the user dynamic search instructions based upon their current date of visiting the website. The example output is in the paragraph element below:
+
+```js
+<p>Since today is {userDate.toLocaleDateString()}, you can only look back to <span className="history-instructions">{dateHistory.toLocaleDateString()}</span>.</p>
+// Example output: Since today is 2022-05-19, you can only look back to 2022-05-12.
 ```
+
+I am proud of this snippet of code as I tried to take full advantage of the large amount of extra time I had after meeting MVP to make this project the best it can be, further enhancing the user experience. I encountered issues with this code as it was originally updating ```userDate``` with the date that is 7 days behind the current ```userDate```. I submitted an issue ticket regarding this, but before receiving assistance I accidentally found the solution from what I do in my ```<CurrentTime />``` component.

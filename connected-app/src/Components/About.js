@@ -18,7 +18,6 @@ const About = () => {
                     <li><img src={htmlIcon} alt="HTML Icon" /></li>
                     <li><img src={cssIcon} alt="CSS Icon" /></li>
                 </ul>
-                {/* <p>REACT - JS - HTML - CSS</p> */}
             </div>
             <div className="data-utilization">
                 <h2>Data Utilization:</h2>
