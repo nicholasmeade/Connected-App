@@ -2,7 +2,7 @@
 
 ## Project Links
 
-- [GitHub Enterprise](https://github.com/nicholasmeade/project2-react-app/tree/master/connected-app)
+- [GitHub](https://github.com/nicholasmeade/project2-react-app/tree/master/connected-app)
 
 ## Project Description
 
