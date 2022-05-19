@@ -26,7 +26,7 @@ Connected App utilizies the [Weather API](https://www.weatherapi.com/). There ar
 
 ##### How to use Connected App
 
-The landing page is the Current Weather section. It greets the user with a dynamic greeting based upon their local date and time. The greeting changes between 'Good Morning!', 'Good afternoon!' and 'Good Evening!'. A concise description of Connected is at the center of the screen, with incentivizing user interaction to search for the current weather anywhere in the world. The input placeholder directs the user on what to search for.
+The landing page is the Current Weather section. It greets the user with a dynamic greeting based upon their local date and time. The greeting changes between 'Good Morning!', 'Good Afternoon!' and 'Good Evening!'. A concise description of Connected is at the center of the screen, with incentivizing user interaction to search for the current weather anywhere in the world. The input placeholder directs the user on what to search for.
 
 [Landing Screen into Current Weather](https://i.imgur.com/iw9GBAC.png)
 
