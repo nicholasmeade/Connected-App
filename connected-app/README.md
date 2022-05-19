@@ -16,7 +16,7 @@ Connected App is currently on v1.1 - the latest update being changing the weathe
 
 ##### Framework Used
 
-Connected App is built with React.
+Connected App is built with [React](https://reactjs.org/).
 
 Supporting technologies used includes Javascript, HTML and CSS.
 
