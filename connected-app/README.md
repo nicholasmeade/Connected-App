@@ -30,6 +30,8 @@ You can search for the current weather on the Current Weather section. You can s
 
 You can search for the historical weather on the Historical Weather section. You can search by zip code, town, state or country. The API limitation is a maximum look-back of 7 days. A paid subscription to the API will allow for a further look back capability, with the highest offering for this specific API of weather data since 2010.
 
+You can read a brief description of what went into creating the Connected App through the About page.
+
 ##### Credits
 
-Connected App was created by Nicholas Meade. This is a project that was made during the General Assembly Software Engineering Immersive (SEI).
+Connected App was created by Nicholas Meade. This is an individual project that was made during the [General Assembly](https://generalassemb.ly/) Software Engineering Immersive (SEI).
