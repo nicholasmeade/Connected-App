@@ -42,14 +42,12 @@ const HistoricalSearch = () => {
 
     // obtain the current date of the user
     const userDate = new Date();
-    console.log(userDate)
 
     // make 7 day difference of the current date of the user
     const maxHistory = new Date().setDate(userDate.getDate() -7);
 
     // set 7 day difference to be a usable date
     const dateHistory = new Date(maxHistory);
-    console.log(userDate, dateHistory)
 
     // handling submission of user's input (location and date in past for historical data)
     const handleSubmit = (event) => {
