@@ -74,7 +74,7 @@ const HistoricalSearch = () => {
     if (userWeather !== null) {
         historicalWeatherDisplay = (
             <div className="search-result">
-                <h2>On {userWeather.forecast.forecastday[0].date}, {userWeather.location.name}'s weather forecast was...</h2>
+                <h2>On {userWeather.forecast.forecastday[0].date}, {userWeather.location.name}, {userWeather.location.country}'s weather forecast was...</h2>
                 <h3>An average temperature of {userWeather.forecast.forecastday[0].day.avgtemp_f}°F.</h3>
                 <h3>The high was {userWeather.forecast.forecastday[0].day.maxtemp_f}°F and the low was {userWeather.forecast.forecastday[0].day.mintemp_f}°F.</h3>
                 <h3>Sunrise was at {userWeather.forecast.forecastday[0].astro.sunrise} and sunset was at {userWeather.forecast.forecastday[0].astro.sunset}.</h3>

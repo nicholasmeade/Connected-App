@@ -3,39 +3,37 @@ import { useEffect, useState } from 'react';
 import HistoricalWeather from './HistoricalWeather';
 import {Routes, Route, Link, Navigate} from "react-router-dom";
 
-// API by city call = https://api.openweathermap.org/data/2.5/weather?q={city name},{state code},{country code}&appid={API key}
-// https://api.openweathermap.org/data/2.5/weather?q=x&appid=ecbafc8bc682243cadc5b7330751bcef
-// open weather API info
-const apiKey = "ecbafc8bc682243cadc5b7330751bcef"
-const units = "&units=imperial"
+// API template: https://api.weatherapi.com/v1/current.json?key={apiKey}&q={searchedLocation}&aqi=no
+// API key: e15eb896014246a5824164647221705
+const apiKey = "e15eb896014246a5824164647221705"
 
 const CurrentSearch = () => {
-    // state for input search term
-    const [searchWeather, setSearchWeather] = useState('');
+    // state for searching location term
+    const [searchLocation, setSearchLocation] = useState('');
     // state for weather info obtained when weather API is called
     const [userWeather, setUserWeather] = useState(null);
     // state for message to user if there is an invalid location searched
     const [errorMessage, setErrorMessage] = useState('');
 
-    // capturing user's data input to update the state of searchWeather
-    const updateSearchWeather = (event) => {
-        setSearchWeather(event.target.value)
+     // capturing user's data input to update the state of searchLocation
+     const updateSearchLocation = (event) => {
+        setSearchLocation(event.target.value)
     }
 
-    // handling submission of user's input (zipcode, state, country)
+    // running API call once form is submitted
     const handleSubmit = (event) => {
         // prevent page reload when submitting form
         event.preventDefault()
         // fetching weather info from API
-        fetch(`https://api.openweathermap.org/data/2.5/weather?q=${searchWeather}&appid=${apiKey}${units}`)
+        fetch(`https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${searchLocation}&aqi=no`)
             .then(response => response.json())
             .then(data => {
-                // reset input field to empty string
-                setSearchWeather('');
-                // if user input is invalid; has key/value pairs of "cod": "404" and "message": "city not found"
-                if (data.cod === "404" || data.cod === "400") {
+                // reset input field of searchLocation to be an empty string
+                setSearchLocation('')
+                // if user input is invalid; starts with object "error", which contains an object of ""code:" 1006, "message": No matching location found.""
+                if (data.error) {
                     // save error data to error message
-                    setErrorMessage(data)
+                    setErrorMessage(data.error)
                     // reset userWeather
                     setUserWeather(null)
                 // if user input is valid
@@ -46,7 +44,7 @@ const CurrentSearch = () => {
                     setErrorMessage('')
                 }
             })
-        // if there is an error upon API request
+        // if there is an error upon API request    
         .catch(() => setErrorMessage('Sorry, please try again'))
     }
 
@@ -55,9 +53,11 @@ const CurrentSearch = () => {
     if (userWeather !== null) {
         weatherDisplay = (
             <div className="search-result">
-                <h2>{userWeather.name}'s current weather is...</h2>
-                <h3>{userWeather.main.temp}°F</h3>
-                <h3>Today's high is {userWeather.main.temp_max}°F and today's low is {userWeather.main.temp_min}°F.</h3>
+                <h2>{userWeather.location.name}, {userWeather.location.country}'s current weather is...</h2>
+                <h2>{userWeather.current.temp_f}°F</h2>
+                <h3>The current feels-like temperature is {userWeather.current.feelslike_f}°F.</h3>
+                <h3>The current condition is "{userWeather.current.condition.text}".</h3>
+                <h3><img src={userWeather.current.condition.icon} alt="Weather condition icon"/></h3>
                 <h3>Want to try <span className="appname">Connecting</span> to the past? Try <Link className="searchhistorylink"  to="/historicalweather/">Historical Weather!</Link></h3>
             </div>
         )
@@ -72,7 +72,7 @@ const CurrentSearch = () => {
             <div className="user-search-calltoaction">
                 <h2><span className="appname">Be Connected</span><span className="calltoaction"> - search anywhere in the world to see what the weather is!</span></h2>
                 <form onSubmit={handleSubmit}>
-                    <input onChange={updateSearchWeather} value={searchWeather} type="text" placeholder="Zip, Town, State or Country"/>
+                    <input onChange={updateSearchLocation} value={searchLocation} type="text" placeholder="Zip, Town, State or Country"/>
                     <input className="user-submit-button" type="submit" value="Connect!" />
                 </form>
             </div>
