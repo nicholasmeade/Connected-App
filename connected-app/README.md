@@ -1,70 +1,33 @@
-# Getting Started with Create React App
+##### Connected - A Weather Based React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to Connected. Connected is a weather based React App that is a small space on the internet to feel more connected with all parts of the world, both now and in the past.
 
-## Available Scripts
+Connected allows you to search for the current weather anywhere in the world, as well as looking at historical weather forecast data anywhere in the world.
 
-In the project directory, you can run:
+##### Motivation
 
-### `npm start`
+The idea behind Connected was to have a simple space on the internet to feel connected to other parts of the world through the weather. I have always enjoyed Meteorology from a young age, at one point wanting to be a Meteorologist along the way.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The goal was to have an easy UI/UX when interacting with the Connected App.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+##### Build Status
 
-### `npm test`
+Connected App is currently on v1.1 - the latest update being changing the weather API used for the current weather search to be the same weather API used when looking up the historical weather. This API proved to be easier to work with, and the data that can be obtained is more extensive making a more end-user experience.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+##### Screenshots
 
-### `npm run build`
+##### Framework Used
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Connected App is built with React.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Supporting technologies used includes Javascript, HTML and CSS.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+##### Features
 
-### `npm run eject`
+##### API Reference
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+##### How to use Connected App
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+##### Credits
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Connected App was created by Nicholas Meade. This is a project that was made during the General Assembly Software Engineering Immersive (SEI).

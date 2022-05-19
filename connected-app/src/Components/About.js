@@ -1,14 +1,24 @@
 import {Routes, Route, Link, Navigate} from "react-router-dom";
 import CurrentTime from "./CurrentTime";
+import jsIcon from './../Icons/JS.png';
+import reactIcon from './../Icons/React.png';
+import cssIcon from './../Icons/CSS.png';
+import htmlIcon from './../Icons/HTML.png';
 
 const About = () => {
     return ( 
         <div className="aboutdescription">
             <CurrentTime />
-            <h1>Connected was made using...</h1>
+            <h1><span className="appname">Connected</span> was made using...</h1>
             <div className="webpage-development">
                 <h2>Webpage Development:</h2>
-                <p>REACT - JS - HTML - CSS</p>
+                <ul className="language-icons">
+                    <li><img src={reactIcon} alt="React Icon" /></li>
+                    <li><img src={jsIcon} alt="JS Icon" /></li>
+                    <li><img src={htmlIcon} alt="HTML Icon" /></li>
+                    <li><img src={cssIcon} alt="CSS Icon" /></li>
+                </ul>
+                {/* <p>REACT - JS - HTML - CSS</p> */}
             </div>
             <div className="data-utilization">
                 <h2>Data Utilization:</h2>

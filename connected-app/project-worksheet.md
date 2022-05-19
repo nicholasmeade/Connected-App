@@ -147,6 +147,9 @@ Based on the initial logic defined in the previous sections try and breakdown th
 - added my own logic for what I specifically wanted to do, received help from instructor with correcting my function
 ##### [CodeGrepper](https://www.codegrepper.com/code-examples/css/background+color+gradient+no+repeat+full+screen)
 - helped to figure out how to make my background gradient of my webpage not repeat encompassing the entire React App
+##### [W3 Docs](https://www.w3docs.com/snippets/javascript/how-to-subtract-days-from-date-in-javascript.html)
+##### [StackOverFlow](https://stackoverflow.com/questions/1296358/how-to-subtract-days-from-a-plain-date)
+- above two articles helped with obtaining a user's local time and date and how to subtract days from the current date, this was utilized in having a dynamic user instruction in the historical weather search
 
 ## Code Snippet
 
