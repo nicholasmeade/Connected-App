@@ -40,6 +40,17 @@ const HistoricalSearch = () => {
         setSearchDate(event.target.value)
     }
 
+    // obtain the current date of the user
+    const userDate = new Date();
+    console.log(userDate)
+
+    // make 7 day difference of the current date of the user
+    const maxHistory = new Date().setDate(userDate.getDate() -7);
+
+    // set 7 day difference to be a usable date
+    const dateHistory = new Date(maxHistory);
+    console.log(userDate, dateHistory)
+
     // handling submission of user's input (location and date in past for historical data)
     const handleSubmit = (event) => {
         //prevent page reload when submitting form
@@ -102,7 +113,7 @@ const HistoricalSearch = () => {
                 </form>
                 <div className="searchparameters">
                     <p>Note: the limit to look back is 7 days! This includes today's current date.</p>
-                    <p>Example: if today's date was 2022-05-10, you can only look back to 2022-05-04.</p>
+                    <p>Since today is {userDate.toLocaleDateString()}, you can only look back to {dateHistory.toLocaleDateString()}.</p>
                 </div>
             </div>
         </div>
