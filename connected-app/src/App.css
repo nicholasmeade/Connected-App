@@ -195,19 +195,20 @@ footer button:hover {
 
 /* About styling */
 
-
+.aboutdescription {
+  font-family: 'Nunito', sans-serif;
+}
 
 
 
 /* CurrentTime styling */
-
-
+/* shared near top of CSS */
 
 
 
 /* TABLET DESIGN */
 @media screen and (min-width: 760px) {
-
+/* no specific changes for tablet design */
 }
 
 /* DESKTOP DESIGN */

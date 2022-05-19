@@ -4,6 +4,7 @@ import HistoricalWeather from './HistoricalWeather';
 import {Routes, Route, Link, Navigate} from "react-router-dom";
 
 // API by city call = https://api.openweathermap.org/data/2.5/weather?q={city name},{state code},{country code}&appid={API key}
+// https://api.openweathermap.org/data/2.5/weather?q=x&appid=ecbafc8bc682243cadc5b7330751bcef
 // open weather API info
 const apiKey = "ecbafc8bc682243cadc5b7330751bcef"
 const units = "&units=imperial"
@@ -32,7 +33,7 @@ const CurrentSearch = () => {
                 // reset input field to empty string
                 setSearchWeather('');
                 // if user input is invalid; has key/value pairs of "cod": "404" and "message": "city not found"
-                if (data.cod === "404") {
+                if (data.cod === "404" || data.cod === "400") {
                     // save error data to error message
                     setErrorMessage(data)
                     // reset userWeather

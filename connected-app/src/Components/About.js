@@ -3,7 +3,7 @@ import CurrentTime from "./CurrentTime";
 
 const About = () => {
     return ( 
-        <div>
+        <div className="aboutdescription">
             <CurrentTime />
             <h2>Connected was made using...</h2>
             <div className="webpage-development">
@@ -19,8 +19,8 @@ const About = () => {
                     <p>Description of data pulled</p>
                     <p>Description of different API calls on both pages</p>
             </div>
-            <footer>
-                <p><Link to="/">Return to home</Link></p>
+            <footer className="about-footer">
+                <button><Link className="return-home-link" to="/">Return to home</Link></button>
             </footer>
         </div>
      );
