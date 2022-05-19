@@ -111,7 +111,7 @@ const HistoricalSearch = () => {
                 </form>
                 <div className="searchparameters">
                     <p>Note: the limit to look back is 7 days! This includes today's current date.</p>
-                    <p>Since today is {userDate.toLocaleDateString()}, you can only look back to {dateHistory.toLocaleDateString()}.</p>
+                    <p>Since today is {userDate.toLocaleDateString()}, you can only look back to <span className="history-instructions">{dateHistory.toLocaleDateString()}</span>.</p>
                 </div>
             </div>
         </div>

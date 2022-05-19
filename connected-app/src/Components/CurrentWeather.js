@@ -14,7 +14,7 @@ const CurrentWeather = () => {
         // logic to toggle between greetings based on the hour
         let greeting
             if (hour < 12) {
-                greeting = "Good morning!" 
+                greeting = "Good morning!"
             } else if (hour >= 12 && hour < 17) {
                 greeting = "Good afternoon!"
             } else if (hour >= 17 && hour < 24) {

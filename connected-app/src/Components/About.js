@@ -5,19 +5,17 @@ const About = () => {
     return ( 
         <div className="aboutdescription">
             <CurrentTime />
-            <h2>Connected was made using...</h2>
+            <h1>Connected was made using...</h1>
             <div className="webpage-development">
-                <h3>Webpage Development:</h3>
+                <h2>Webpage Development:</h2>
                 <p>REACT - JS - HTML - CSS</p>
             </div>
             <div className="data-utilization">
-                <h3>Data Utilization:</h3>
-                <h4>Open Weather Map API</h4>
-                    <p>Description of data pulled</p>
-                    <p>Description of different API calls on both pages</p>
-                <h4>API source for time/location of user</h4>
-                    <p>Description of data pulled</p>
-                    <p>Description of different API calls on both pages</p>
+                <h2>Data Utilization:</h2>
+                <h3>Weather API - A Free Weather API</h3>
+                    <p>To obtain different weather data (i.e. current forecast and historical forecast), <a className="api-link" href="https://www.weatherapi.com/">Weather API</a> is utilized.</p>
+                    <p>Two different API calls are run for current forecast data and historical forecast data. The API returns different data for these API calls.</p>
+                    <p>The free version of <a className="api-link" href="https://www.weatherapi.com/">Weather API</a> has a historical forecast search back limit of 7 days.</p>
             </div>
             <footer className="about-footer">
                 <button><Link className="return-home-link" to="/">Return to home</Link></button>

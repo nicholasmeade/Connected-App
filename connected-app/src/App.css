@@ -199,6 +199,11 @@ footer button:hover {
   font-family: 'Nunito', sans-serif;
 }
 
+.history-instructions {
+  color: red;
+  text-decoration: underline;
+}
+
 
 
 /* CurrentTime styling */
