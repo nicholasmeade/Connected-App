@@ -53,8 +53,8 @@ const CurrentSearch = () => {
     if (userWeather !== null) {
         weatherDisplay = (
             <div className="search-result">
-                <h2>{userWeather.location.name}, {userWeather.location.country}'s current weather is...</h2>
-                <h2>{userWeather.current.temp_f}°F</h2>
+                <h1>{userWeather.location.name}, {userWeather.location.country}'s current weather is...</h1>
+                <h2>A current temperature is {userWeather.current.temp_f}°F.</h2>
                 <h3>The current feels-like temperature is {userWeather.current.feelslike_f}°F.</h3>
                 <h3>The current condition is "{userWeather.current.condition.text}".</h3>
                 <h3><img src={userWeather.current.condition.icon} alt="Weather condition icon"/></h3>
