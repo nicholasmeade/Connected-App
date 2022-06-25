@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/project2-react-app/static/css/main.acffde6b.css",
-    "main.js": "/project2-react-app/static/js/main.a6279f7f.js",
-    "static/js/787.97f974e6.chunk.js": "/project2-react-app/static/js/787.97f974e6.chunk.js",
-    "index.html": "/project2-react-app/index.html",
-    "main.acffde6b.css.map": "/project2-react-app/static/css/main.acffde6b.css.map",
-    "main.a6279f7f.js.map": "/project2-react-app/static/js/main.a6279f7f.js.map",
-    "787.97f974e6.chunk.js.map": "/project2-react-app/static/js/787.97f974e6.chunk.js.map"
+    "main.css": "/Connected-App/static/css/main.acffde6b.css",
+    "main.js": "/Connected-App/static/js/main.44537788.js",
+    "static/js/787.97f974e6.chunk.js": "/Connected-App/static/js/787.97f974e6.chunk.js",
+    "index.html": "/Connected-App/index.html",
+    "main.acffde6b.css.map": "/Connected-App/static/css/main.acffde6b.css.map",
+    "main.44537788.js.map": "/Connected-App/static/js/main.44537788.js.map",
+    "787.97f974e6.chunk.js.map": "/Connected-App/static/js/787.97f974e6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.acffde6b.css",
-    "static/js/main.a6279f7f.js"
+    "static/js/main.44537788.js"
   ]
 }
